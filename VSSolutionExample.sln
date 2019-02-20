@@ -3,8 +3,66 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{A83EC2EC-9317-4ACC-AA31-0FC82FBF53DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{811BB5C8-FBD7-4FD1-A5DC-CF5F1FE417D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppConsoleApp", "apps\CppConsoleApp\CppConsoleApp.vcxproj", "{5127B347-947C-4025-8552-B60D9AE5DCA6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDynamicLib", "submodules\CDynamicLib\CDynamicLib.vcxproj", "{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppStaticLib", "submodules\CppStaticLib\CppStaticLib.vcxproj", "{21131F65-4207-415D-A2AB-6CDE072FA551}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFCAdder", "apps\MFCAdder\MFCAdder.vcxproj", "{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Debug|x64.ActiveCfg = Debug|x64
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Debug|x64.Build.0 = Debug|x64
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Debug|x86.ActiveCfg = Debug|Win32
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Debug|x86.Build.0 = Debug|Win32
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Release|x64.ActiveCfg = Release|x64
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Release|x64.Build.0 = Release|x64
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Release|x86.ActiveCfg = Release|Win32
+		{5127B347-947C-4025-8552-B60D9AE5DCA6}.Release|x86.Build.0 = Release|Win32
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Debug|x64.ActiveCfg = Debug|x64
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Debug|x64.Build.0 = Debug|x64
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Debug|x86.ActiveCfg = Debug|Win32
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Debug|x86.Build.0 = Debug|Win32
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Release|x64.ActiveCfg = Release|x64
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Release|x64.Build.0 = Release|x64
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Release|x86.ActiveCfg = Release|Win32
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D}.Release|x86.Build.0 = Release|Win32
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Debug|x64.ActiveCfg = Debug|x64
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Debug|x64.Build.0 = Debug|x64
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Debug|x86.ActiveCfg = Debug|Win32
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Debug|x86.Build.0 = Debug|Win32
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Release|x64.ActiveCfg = Release|x64
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Release|x64.Build.0 = Release|x64
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Release|x86.ActiveCfg = Release|Win32
+		{21131F65-4207-415D-A2AB-6CDE072FA551}.Release|x86.Build.0 = Release|Win32
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Debug|x64.ActiveCfg = Debug|x64
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Debug|x64.Build.0 = Debug|x64
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Debug|x86.Build.0 = Debug|Win32
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Release|x64.ActiveCfg = Release|x64
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Release|x64.Build.0 = Release|x64
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Release|x86.ActiveCfg = Release|Win32
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5127B347-947C-4025-8552-B60D9AE5DCA6} = {A83EC2EC-9317-4ACC-AA31-0FC82FBF53DC}
+		{9C9F4F3B-1428-4396-9CEB-C41EAC4A965D} = {811BB5C8-FBD7-4FD1-A5DC-CF5F1FE417D6}
+		{21131F65-4207-415D-A2AB-6CDE072FA551} = {811BB5C8-FBD7-4FD1-A5DC-CF5F1FE417D6}
+		{5C6FB85A-1049-4F8B-BE96-C1FA687B1E78} = {A83EC2EC-9317-4ACC-AA31-0FC82FBF53DC}
 	EndGlobalSection
 EndGlobal
