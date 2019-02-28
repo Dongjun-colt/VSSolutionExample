@@ -3,6 +3,8 @@
 		@mkdir bin\%%P\%%C
 	)
 )
+@mkdir downloads
+@mkdir vendors
 
 @rem DirectX Feb 2010
 @if not exist .\vendors\DirectXFeb2010 (
