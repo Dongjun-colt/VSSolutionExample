@@ -3,12 +3,16 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <BinDir>$(SolutionDir)bin\</BinDir>
+    <VendorsDir>$(SolutionDir)vendors\</VendorsDir>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
   <ItemGroup>
     <BuildMacro Include="BinDir">
       <Value>$(BinDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="VendorsDir">
+      <Value>$(VendorsDir)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
